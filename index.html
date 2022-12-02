@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Projeto Web 01</title>
+</head>
+
+<body>
+  <!-- Nav Bar-->
+  <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
+    <a class="navbar-brand" href="#">BRASIL FUTEBOL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse col-11 m-auto" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">HOME <span class="sr-only">(página atual)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.cbf.com.br/feed-geral" target="_blank">NOTÍCIAS</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link disabled" href="https://www.cbf.com.br/cbf-tv/ultimos-videos" target="_blank">CBF TV</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <br><br>
+
+  <!--Carrosel  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="margin: 0 auto;">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./img/br1.jpg" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./img/br2.jpg" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./img/br3.jpg" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  <br>
+
+  <!--Cards e Modal-->
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="./img/tite.jpeg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">PRESIDENTE</h5>
+        <p class="card-text">Tite é o presidente da seleção Brasileira na copa do mundo de 2022 no Catar</p>
+
+        <!-- Botão para acionar modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+          Ver Mais
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sobre</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Adenor Leonardo Bachi, mais conhecido como Tite, é um técnico e ex-futebolista brasileiro que atuava
+                como volante. Atualmente comanda a Seleção Brasileira. Em 2019, tornou-se o primeiro treinador a ser
+                campeão da Copa América, da Copa Libertadores da América e da Copa Sul-Americana.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="./img/sampaio.jpeg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">AUXILIAR</h5>
+        <p class="card-text">Ex-volante César Sampaio faz parte da equipe de auxiliares do Brasil na copa do mundo de
+          2022.</p>
+
+        <!-- Botão para acionar modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo1">
+          Ver Mais
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalExemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sobre</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Carlos César Sampaio Campos é um ex-futebolista brasileiro que atuava como volante. É ídolo histórico do
+                Palmeiras, mas também jogou nos outros três grandes clubes paulistas: Santos, Corinthians e São Paulo.
+                Atualmente é auxiliar técnico da Seleção Brasileira.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="./img/juninho.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">COORDENADOR</h5>
+        <p class="card-text">O meio-campista Juninho Paulista é o atual coordenador de Futebol da CBF</p>
+
+        <!-- Botão para acionar modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo2">
+          Ver Mais
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalExemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sobre</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Oswaldo Giroldo Júnior, mais conhecido como Juninho ou Juninho Paulista, é um ex-futebolista brasileiro
+                que atuava como meio-campista. Atualmente é coordenador de Futebol da CBF. Começou sua carreira no
+                Ituano, em 1992, e aposentou-se no mesmo clube, em abril de 2010.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <!--Texto-->
+  <hr>
+  <div class="col-11 m-auto">
+    <h2 class="text-center">Brasil na copa do mundo:</h2>
+    <p class="text-center">Cabeça de chave do grupo G, a equipe do técnico enfrentará ainda na primeira fase as seleções
+      da Suíça e de Camarões, além da já citada Sérvia. Avançam na primeira fase os primeiros e segundos colocados de
+      cada grupo. Caso se classifique na fase de grupos e siga até a final - ou a disputa do terceiro lugar -, a seleção
+      brasileira fará mais quatro partidas....
+      <a href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/11/07/datas-jogos-brasil-copa-do-mundo-2022.htm?cmpid=copiaecola"
+        target="_blank" rel="noopener noreferrer" style="text-decoration: none;">Ver mais</a>
+    </p>
+  </div>
+  <hr>
+
+  <!--Contato-->
+  <div class="col-11 m-auto" style="text-align: center;">
+    <h2 class="text-center"> Contato</h2>
+    <!--Whatsapp Clicavel-->
+    <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-whatsapp" style="font-size: 90px; color:green;"></i>
+    </a>
+
+    <!--Facebook Clicavel-->
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook" style="font-size: 90px; color: blue; margin: 100px;"></i>
+    </a>
+
+    <!--Gmail Clicavel-->
+    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1963882442%3A1669138563041295&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAuLu6J-X-aPSrTomazVroIAyg-FW-NKKnLrtCCHWKjw2IMa6I82nF4nhpr2MtpIfPVo1PDL"
+      target="_blank" rel="noopener noreferrer">
+      <i class="fa-regular fa-envelope" style="font-size: 90px; color:red;"></i>
+    </a>
+  </div>
+
+  <!--Rodapé-->
+  <footer style="background-color: #333; padding: 30px;">
+    <div class="text-center">
+      <a href="#">© 2022 Copywriting: By Gabriel F. Rodrigues ™</a>
+    </div>
+  </footer>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
